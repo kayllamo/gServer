@@ -30,8 +30,8 @@ describe('GET /apps', () => {
             expect(res.body).to.be.an('array');
             expect(res.body).to.have.lengthOf.at.least(1);
             // console.log(res.body[0].Genres);
-            const genres = res.body[1].Genres;
-            const genArray = ['Arcade', 'Action', 'Card', 'Puzzle', 'Strategy', 'Casual', 'Adventure'];
+            const genres = res.body[0].Genres;
+            const genArray = ['Arcade', 'Action', 'Card', 'Puzzle', 'Strategy', 'Casual', 'Adventure;Action & Adventure'];
             expect(genres).to.be.oneOf(genArray);
        })
     })
